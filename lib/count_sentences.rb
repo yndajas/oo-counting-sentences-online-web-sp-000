@@ -16,7 +16,6 @@ class String
 
   def count_sentences
     sentences = self.split(/[.!?]/)
-    binding.pry
     sentences_no_blanks = []
     sentences.each do |sentence|
       if sentence.length != 0
