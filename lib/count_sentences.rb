@@ -15,6 +15,13 @@ class String
   end
 
   def count_sentences
-
+    sentences = self.split
+    sentences_no_blanks = []
+    sentences.each do |sentence|
+      if sentence.length != 0
+        sentences_no_blanks << sentence
+      end
+    end
+    sentences_no_blanks.length   
   end
 end
