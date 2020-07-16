@@ -16,7 +16,9 @@ class String
 
   def count_sentences
     sentences = self.split(/[.!?]/)
-    sentences.select 
+    sentences.select do |sentence|
+      sentence.length > 0
+    end.length
     # sentences_no_blanks = []
     # sentences.each do |sentence|
     #   if sentence.length != 0
